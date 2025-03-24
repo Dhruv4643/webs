@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Moment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Home Page -->
+<div id="homePage">
+    <header>
+        <h1>Our Journey Together</h1>
+        <p>Click on the photos to see our memories!</p>
+    </header>
+
+    <div class="gallery">
+        <div class="photo" id="photo1">
+            <img src="d1.jpg" alt="Memory 1" width="200px" height="200px">
+        </div>
+        <div class="photo" id="photo2">
+            <img src="d2.jpg" alt="Memory 2" width="200px" height="200px">
+        </div>
+        <div class="photo" id="photo3">
+            <img src="d3.jpg" alt="Memory 3" width="200px" height="200px">
+        </div>
+        <div class="photo" id="photo4">
+            <img src="d5.jpg" alt="Memory 4" width="200px" height="200px">
+        </div>
+    </div>
+    
+    <button onclick="goToProposal()">click for some special</button>
+</div>
+
+<!-- Will You Marry Me Page -->
+<div id="proposalPage" style="display: none;">
+    <header>
+        <h1>Will You Marry Me?</h1>
+        <p>This is a big moment, will you say yes?</p>
+    </header>
+    
+    <div class="proposal-buttons">
+        <button onclick="handleProposalResponse('yes')">Yes</button>
+        <button onclick="handleProposalResponse('no')" id="noButton">No</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
